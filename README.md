@@ -65,7 +65,5 @@
 ### Don't forget css
     <link rel="stylesheet" href="{{ asset('public/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/assets/fonts/fontawesome/css/fontawesome-all.css') }}">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="{{ asset('public/assets/css/pnotify.css') }}">
     
