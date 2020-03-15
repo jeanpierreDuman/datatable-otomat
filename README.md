@@ -18,7 +18,7 @@
             'society' => $idSociety
         ]);
         
-        $salaries = $datatableService->getMainData()['data'];
+        $salaries = $datatableService->getParams('data');
         
         $array = [];
         
@@ -33,11 +33,11 @@
             ];
         }
 
-        $jsonData = $datatableService->getJson($array);
+        $jsonData = $datatableService->getJsonData($array);
         
         return new JsonResponse($jsonData);
     }
-
+    
 ### Datatable example in template.twig
     var table = getDatatable('#table-society-salary', '{{ path('datatable_society_salary') }}', [
         {data: 'firstname'},
