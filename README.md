@@ -44,6 +44,20 @@
         arguments: ['@doctrine.orm.entity_manager']
 
 ### Datatable example in template.twig
+
+    <table id="table-society-salary" class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Prénom</th>
+                <th>Nom</th>
+                <th>Email</th>
+                <th>Date de naissance</th>
+                <th>Date d'arrivée</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
     var table = getDatatable('#table-society-salary', '{{ path('datatable_society_salary') }}', [
         {data: 'firstname'},
         {data: 'lastname'},
