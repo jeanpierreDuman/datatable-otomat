@@ -38,6 +38,11 @@
         return new JsonResponse($jsonData);
     }
     
+### Datatable routing services
+    App\Service\DatatableService:
+        class: App\Service\DatatableService
+        arguments: ['@doctrine.orm.entity_manager']
+
 ### Datatable example in template.twig
     var table = getDatatable('#table-society-salary', '{{ path('datatable_society_salary') }}', [
         {data: 'firstname'},
